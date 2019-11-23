@@ -1,0 +1,200 @@
+<html>
+<body background="IMG1.jpg">
+<head>
+<title>Credit Card Application Form</title>
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='../static/style.css') }}">
+</head>
+ 
+<body style = "background: url(IMG1.jpg)">
+<h3>CREDIT CARD APPLICATION FORM</h3>
+
+<form action="{{ url_for('predict')}}" method="POST"> 
+<table align="center" cellpadding = "10">
+ 
+<!----- First Name ---------------------------------------------------------->
+<tr>
+<td>FIRST NAME</td>
+<td><input type="text" name="First_Name" maxlength="30"/>
+(max 30 characters a-z and A-Z)
+</td>
+</tr>
+ 
+<!----- Last Name ---------------------------------------------------------->
+<tr>
+<td>LAST NAME</td>
+<td><input type="text" name="Last_Name" maxlength="30"/>
+(max 30 characters a-z and A-Z)
+</td>
+</tr>
+  
+<!----- Age---------------------------------------------------->
+<tr>
+<td>AGE</td>
+<td><input type="text" name="Age" maxlength="100" /></td>
+</tr>
+ 
+<!----- Gender ----------------------------------------------------------->
+<tr>
+<td>GENDER</td>
+<td>
+Male <input type="radio" name="Gender" value="Male" />
+Female <input type="radio" name="Gender" value="Female" />
+</td>
+</tr>
+
+<!----- Total Debt ---------------------------------------------------------->
+<tr>
+<td>TOTAL DEBT</td>
+<td>
+<input type="text" name="Total_Debt" maxlength="10" />
+</td>
+</tr>
+ 
+<!----- Existing Bank Customer ---------------------------------------------------------->
+<tr>
+<td>EXISTING BANK CUSTOMER</td>
+<td>
+<select name="Bank_Customer" id="Bank_Customer">
+<option value="-1">Select</option>
+<option value="1">g</option>
+<option value="2">gg</option>
+<option value="3">p</option>
+</select>
+</td>
+</tr>
+
+<!----- Employment Status ---------------------------------------------------------->
+<tr>
+<td>EMPLOYMENT STATUS</td>
+<td>
+<select name="E_Status" id="E_Status">
+<option value="-1">Select</option>
+<option value="1">t</option>
+<option value="2">f</option>
+</td>
+</tr>
+
+<!----- Income ---------------------------------------------------------->
+<tr>
+<td>INCOME</td>
+<td><input type="text" name="Income" maxlength="30" />
+</td>
+</tr>
+
+<!----- Total Experience ---------------------------------------------------------->
+<tr>
+<td>TOTAL EXPERIENCE <br /><br /><br /></td>
+<td><input type="text" name="Tot_Experience" maxlength="10" /></td>
+</tr>
+
+<!----- Address ---------------------------------------------------------->
+<tr>
+<td>CREDIT SCORE<br /><br /><br /></td>
+<td><input type="text" name="Credit_Score" maxlength="10" /></td>
+</tr>
+ 
+<!----- Education ---------------------------------------------------------->
+<tr>
+<td>EDUCATION LEVEL</td>
+<td>
+<select name="Edu_Level" id="Edu_Level">
+<option value="-1">Select</option>
+<option value="1">w</option>
+<option value="2">q</option>
+<option value="3">m</option>
+ 
+<option value="4">r</option>
+<option value="5">cc</option>
+<option value="6">k</option>
+<option value="7">c</option>
+<option value="8">d</option>
+<option value="9">x</option>
+<option value="10">i</option>
+<option value="11">e</option>
+<option value="12">aa</option>
+<option value="13">ff</option>
+<option value="14">j</option>
+</select>
+</td>
+</tr>
+
+<tr>
+<td>PRIOR DEFAULT</td>
+ 
+<td>
+<select name="Default" id="Default">
+<option value="-1">Select:</option>
+<option value="1">Yes</option>
+<option value="2">No</option>
+</select>
+</td>
+</tr>
+
+<tr>
+<td>MARITAL STATUS</td>
+<td>
+<select name="Mar_Status" id="Mar_Status">
+<option value="-1">Select:</option>
+<option value="1">Single</option>
+<option value="2">Married</option>
+<option value="3">Divorced</option>
+</select>
+</td>
+</tr>
+
+<tr>
+<td>CANADIAN CITIZENSHIP</td>
+<td>
+<select name="Citizen" id="Citizen">
+<option value="-1">Select:</option>
+<option value="1">Yes</option>
+<option value="2">No</option>
+<option value="3">Cannot disclose</option>
+</select>
+</td>
+</tr>
+
+
+<tr>
+<td>DRIVERS LICENCE</td>
+<td>
+<select name="D_Licence" id="D_Licence">
+<option value="-1">Select:</option>
+<option value="1">Yes</option>
+<option value="2">No</option>
+</select>
+</td>
+</tr>
+
+<tr>
+<td>ETHNICITY</td>
+ 
+<td>
+<select name="Ethnicity" id="Ethnicity">
+<option value="-1">Select:</option>
+<option value="1">v</option>
+<option value="2">h</option>
+<option value="3">bb</option>
+<option value="4">ff</option>
+<option value="5">j</option>
+<option value="6">z</option>
+<option value="7">o</option>
+<option value="8">dd</option>
+<option value="9">n</option>
+</select>
+</td>
+</tr>
+  
+<!----- Submit and Reset ------------------------------------------------->
+<tr>
+<td colspan="2" align="center">
+<input type="submit" value="Submit">
+<input type="reset" value="Reset">
+</td>
+</tr>
+</table>
+ 
+</form>
+ 
+</body>
+</html>
