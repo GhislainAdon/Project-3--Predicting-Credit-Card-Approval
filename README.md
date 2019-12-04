@@ -18,9 +18,11 @@ To install the above packages using pip, use command
 ```$pip install package-name```
 
 ### Files Description
-- CC_data.csv: This is the dataset file for the project
+- credit-approval_pandas.csv: This is the dataset file for the project
+- The initial dataset has been analysed on Tableau as well at https://public.tableau.com/profile/akshit.arora8313#!/
 - Data is downloaded from http://archive.ics.uci.edu/ml/datasets/credit+approval
 - CreditCardApproval.ipynb: The jupyter notebook which includes the analysis and modeling
+- The project also includes a front-end webiste which can be deloyed using flask app and will provide with "Approved" or "Not Approved" status on entering all the parameters
 
 ### Usage
   - Run the jupyter notebook CredictCardApproval.ipynb
@@ -29,6 +31,6 @@ To install the above packages using pip, use command
 In this project, I have tried to find out the factors that are most important for getting an 
 approval for the credit card through the power of Data Analysis and Machine Learning. 
 Though we have achieved 86% of accuracy, we also tried to check if we can improve the 
-performance further and tried grid search. 
+performance further and tried decision tree. 
 However, 86% is the best we could get from this data using both the model; 
 logistic regression and random forest
