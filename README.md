@@ -21,8 +21,9 @@ To install the above packages using pip, use command
 - credit-approval_pandas.csv: This is the dataset file for the project
 - The initial dataset has been analysed on Tableau as well at https://public.tableau.com/profile/akshit.arora8313#!/
 - Data is downloaded from http://archive.ics.uci.edu/ml/datasets/credit+approval
-- CreditCardApproval.ipynb: The jupyter notebook which includes the analysis and modeling
+- CreditApproval.ipynb: The jupyter notebook which includes the analysis and modeling
 - The project also includes a front-end webiste which can be deloyed using flask app and will provide with "Approved" or "Not Approved" status on entering all the parameters
+- For the front-end refer to the folder Credit Card Approval, first run the model.py and then the app.py file
 
 ### Usage
   - Run the jupyter notebook CredictCardApproval.ipynb
